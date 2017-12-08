@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account_builder_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ju.loginpage.AccountBuilderForm">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/editTextAddAccount"
+        android:hint="Add Account Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editTextAddNewPass"
+        android:hint="Add New Password"
+        android:layout_below="@+id/editTextAddAccount"
+        android:layout_alignStart="@+id/editTextAddAccount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/editTextConfirmPass"
+        android:hint="Confirm New Password"
+        android:layout_below="@+id/editTextAddNewPass"
+        android:layout_alignStart="@+id/editTextAddNewPass" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConfirmPass"
+        android:layout_alignEnd="@+id/editTextConfirmPass"
+        android:layout_marginTop="42dp"
+        android:id="@+id/buttonSave2"
+        android:onClick="saveData" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonSave2"
+        android:layout_alignStart="@+id/editTextConfirmPass"
+        android:id="@+id/buttonCancel2" />
+
+</RelativeLayout>

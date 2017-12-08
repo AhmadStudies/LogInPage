@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_new_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ju.loginpage.CreateNewAccount">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editTextAddAccountName"
+        android:hint="Add Account Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editTextAddAccountName"
+        android:layout_alignEnd="@+id/editTextAddAccountName"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editTextAddNewPasswordC"
+        android:hint="Add New Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editTextAddNewPasswordC"
+        android:layout_alignStart="@+id/editTextAddNewPasswordC"
+        android:layout_marginTop="28dp"
+        android:id="@+id/editTextConfirmNewPassword"
+        android:hint="Confirm New Password" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConfirmNewPassword"
+        android:layout_alignEnd="@+id/editTextConfirmNewPassword"
+        android:layout_marginTop="51dp"
+        android:id="@+id/buttonSaveCreateNewAccount" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonSaveCreateNewAccount"
+        android:layout_alignStart="@+id/editTextConfirmNewPassword"
+        android:id="@+id/buttonCancelCreateNewAccount" />
+
+    <Button
+        android:text="Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonReturnCreateNewAccount" />
+
+</RelativeLayout>

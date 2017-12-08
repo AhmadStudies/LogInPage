@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_existing_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ju.loginpage.ChangeExistingAccount">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextAddOldAccountNameC"
+        android:hint="Add Old Account Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/editTextAddOldPasswordC"
+        android:hint="Add Old Password"
+        android:layout_below="@+id/editTextAddOldAccountNameC"
+        android:layout_alignStart="@+id/editTextAddOldAccountNameC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editTextAddOldPasswordC"
+        android:layout_alignStart="@+id/editTextAddOldPasswordC"
+        android:layout_marginTop="18dp"
+        android:id="@+id/ editTextAddNewAccountName"
+        android:hint="Add new Account Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextAddNewPasswordC"
+        android:hint="Add New Password"
+        android:layout_below="@+id/ editTextAddNewAccountName"
+        android:layout_alignStart="@+id/ editTextAddNewAccountName"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextConfirmNewPasswordC"
+        android:hint="Confirm New Password"
+        android:layout_below="@+id/editTextAddNewPasswordC"
+        android:layout_alignStart="@+id/editTextAddNewPasswordC"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCancelC"
+        android:layout_below="@+id/editTextConfirmNewPasswordC"
+        android:layout_alignStart="@+id/editTextConfirmNewPasswordC"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSaveC"
+        android:layout_alignBaseline="@+id/buttonCancelC"
+        android:layout_alignBottom="@+id/buttonCancelC"
+        android:layout_alignEnd="@+id/editTextConfirmNewPasswordC" />
+
+</RelativeLayout>
